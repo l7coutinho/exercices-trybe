@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    top: 0;
+    background-color: #6b705c;
+    padding: 3rem;
+  }
+  
+  .header ul {
+    list-style: none;
+  }
+  
+  body {
+    background-color: #ffe8d6;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  #sobre-mim {
+    background-color: #b7b7a4;
+  }
