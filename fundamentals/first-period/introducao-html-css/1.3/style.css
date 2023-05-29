@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1,
+h2,
+p,
+h3,
+ol,
+ul,
+h4 {
+  color: #eff6ee;
+  letter-spacing: 2px;
+  width: auto;
+}
+
+body {
+  background-color: #eff6ee;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Configs gerais */
+
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #273043;
+  position: fixed;
+  box-shadow: 1px 1px 30px 2px black;
+}
+
+/* ----------- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  background-color: #000000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logo p {
+  font-size: 20px;
+}
+
+#number7 {
+  width: 25px;
+}
+
+/* ---------- */
+
+.navigation {
+  display: flex;
+  align-items: baseline;
+  justify-content: baseline;
+  margin-right: 26rem;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 10rem;
+}
+
+.navigation a {
+  font-size: 18px;
+  text-decoration: none;
+  border-left: 1px solid #000000;
+}
+
+.navigation li {
+  padding: 0.3rem 4rem;
+  color: #eff6ee;
+}
+
+.navigation li:hover {
+  font-weight: 700;
+}
+
+.navigation li:active {
+  transform: scale(0.98);
+}
+
+/* HEADER */
+
+.container {
+  padding-top: 15rem;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 40rem;
+  border-radius: 5rem;
+  box-shadow: 1px 1px 30px 2px black;
+  background-color: #273043;
+}
+
+#picture {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50rem;
+  border: 2px solid black;
+}
+
+#dale {
+  text-align: center;
+  padding: 1rem;
+  width: 60%;
+}
+
+#dale h2 {
+  padding: 1rem;
+}
+
+/* ------------ */
+
+#skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 5rem;
+  margin-left: 22rem;
+  border-radius: 5rem;
+  box-shadow: 1px 1px 30px 2px black;
+  background-color: #273043;
+}
+
+.table-skills h3 {
+  padding: 2rem;
+  font-size: 20px;
+}
+
+.table-skills ol,
+ul {
+  margin-left: 3.5rem;
+}
+
+/* ------ */
+#table {
+  background-color: #273043;
+  color: #eff6ee;
+  width: 50%;
+  padding: 1.5rem;
+  margin-left: 27rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 30px 2px black;
+}
+
+#table a {
+  color: #eff6ee;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid white;
+  padding: 2px 10px;
+}
+/* ------ */
+
+footer {
+  padding-top: 10rem;
+}
+
+.rodape {
+  width: 100%;
+  padding: 2rem;
+  bottom: 0;
+  background-color: #273043;
+  box-shadow: 1px 1px 30px 2px black;
+}
+
+.contact h2 {
+  text-align: center;
+  /* padding: 1rem; */
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#redes li {
+  list-style: none;
+  display: inline;
+  margin-right: 3rem;
+  padding: 0.5rem;
+}
+
+#redes a {
+  color: white;
+}
+
+#copy {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+}
