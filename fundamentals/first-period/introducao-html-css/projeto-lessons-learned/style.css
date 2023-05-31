@@ -1,0 +1,244 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.second-title {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(67, 67, 67);
+  padding: 3rem;
+}
+
+.third-title {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  justify-content: center;
+  color: rgb(224, 200, 172);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(253, 251, 251);
+  line-height: 1em;
+}
+
+#cabecalho {
+  text-align: center;
+  top: 0;
+  width: 100%;
+  background-color: rgb(67, 67, 67);
+  padding: 31px;
+  position: fixed;
+}
+
+#titulo {
+  color: rgb(224, 200, 172);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  padding: 2rem;
+}
+
+nav li {
+  margin-right: 15px;
+  position: relative;
+  top: 31px;
+  display: inline-block;
+  width: 10%;
+  list-style: none;
+  background-color: rgb(67, 67, 67);
+  padding: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 15px 15px 0 0;
+}
+
+nav li:active {
+  transform: scale(0.98);
+}
+
+nav li:hover {
+  background: rgb(241, 237, 221);
+  color: rgb(67, 67, 67);
+  font-weight: 1000;
+}
+
+#trybe:hover {
+  border-radius: 20px;
+  background-color: rgb(19, 138, 15);
+  color: rgb(5, 69, 36);
+}
+
+a {
+  color: rgb(224, 200, 172);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#container {
+  padding-top: 8rem;
+}
+
+#sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 315px;
+  background-color: rgb(67, 67, 67);
+  margin-top: 18rem;
+  margin-left: 26rem;
+  border: 4px solid rgb(153, 153, 153);
+  border-radius: 20px;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  margin-right: 30px;
+  color: rgb(224, 200, 172);
+}
+
+.caption h2 {
+  color: rgb(224, 200, 172);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 50px;
+  padding: 2rem;
+  letter-spacing: 5px;
+}
+
+.caption p {
+  padding: 1rem;
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+#container img {
+  max-width: 22rem;
+  max-height: 18.75rem;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  border: 3px solid rgb(153, 153, 153);
+  border-radius: 20px;
+  position: static;
+}
+
+#lessons {
+  padding-top: 15rem;
+}
+
+#lessons div {
+  margin-left: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(67, 67, 67);
+  color: rgb(224, 200, 172);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  width: 55rem;
+  height: 25rem;
+}
+
+#lessons div h3 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+#lessons div ol {
+  margin-inline: 2.1rem;
+}
+
+#lessons div ul {
+  margin-inline: 2.1rem;
+}
+
+#lessons ol * {
+  padding-top: 11px;
+}
+
+#lessons ul * {
+  padding-top: 11px;
+}
+
+#aprendizado {
+  display: flex;
+}
+
+.lado-esquerdo {
+  padding-top: 15rem;
+}
+
+#h2left {
+  margin-left: 25rem;
+}
+
+.lado-esquerdo p {
+  width: 50%;
+  padding-top: 1rem;
+  margin-left: 30rem;
+  color: rgb(67, 67, 67);
+  font-size: 20px;
+  line-height: 1.3rem;
+}
+
+.lado-direito {
+  float: right;
+  width: 22rem;
+  height: 24rem;
+  background-color: rgb(67, 67, 67);
+  border-radius: 20px;
+  margin-right: 25rem;
+  margin-top: 18rem;
+}
+
+.lado-direito p {
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.5rem;
+  width: 12rem;
+  padding: 1rem;
+  color: rgb(224, 200, 172);
+  font-style: italic;
+}
+
+.content {
+  margin-top: 3rem;
+}
+
+table , th , td {
+  margin-left: 550px;
+  width: 40%;
+  padding: 5px 15px;
+  text-align: center;
+  color: rgb(224, 200, 172);
+  border: 2px solid rgb(153, 153, 153);
+  background-color: rgb(67, 67, 67);
+  border-radius: 0.3rem;
+}
+
+#tabela {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+#rodape {
+  padding: 2rem;
+  background-color: rgb(67, 67, 67);
+  text-align: center;
+  color: rgb(224, 200, 172);
+}
