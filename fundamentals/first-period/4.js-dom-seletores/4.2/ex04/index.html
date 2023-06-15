@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
+      const createTagH1 = () => {
+        const elementBody = document.querySelector('body');
+        const createH1 = document.createElement('h1');
+        createH1.className = 'title';
+        createH1.innerHTML = 'TrybeTrip - Agência de Viagens';
+
+        elementBody.appendChild(createH1);
+      };
+
+      createTagH1();
+
+      //Adicione a tag main com a classe main-content como filho da tag body;
+
+      const addTagMain = () => {
+        const elementBody = document.querySelector('body');
+        const createMain = document.createElement('main');
+        createMain.className = 'main-content';
+
+        elementBody.appendChild(createMain);
+      };
+
+      addTagMain();
+
+      //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+
+      const addTagSection = () => {
+        const elementMain = document.querySelector('.main-content');
+        const createSection = document.createElement('section');
+        createSection.classList = 'center-content';
+
+        elementMain.appendChild(createSection);
+      };
+
+      addTagSection();
+
+      //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
+      const addTagP = () => {
+        const elementSection = document.querySelector('.center-content');
+        const createP = document.createElement('p');
+        createP.innerText = 'Adicionando texto no paragrafo';
+
+        elementSection.appendChild(createP);
+      };
+
+      addTagP();
+
+      //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+      const createTagLeftSection = () => {
+        const elementMain = document.querySelector('.main-content');
+        const createSection = document.createElement('section');
+        createSection.className = 'left-content';
+
+        elementMain.appendChild(createSection);
+      };
+
+      createTagLeftSection();
+
+      //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+      const createTagRightSection = () => {
+        const elementMain = document.querySelector('.main-content');
+        const createRightSection = document.createElement('section');
+        createRightSection.className = 'right-content';
+
+        elementMain.appendChild(createRightSection);
+      };
+
+      createTagRightSection();
+
+      //Adicione uma imagem com src configurado para valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+
+      const createImage = () => {
+        const elementLeftSection = document.querySelector('.left-content');
+        const createImage = document.createElement('img');
+        createImage.className = 'small-image';
+        createImage.src = 'https://picsum.photos/200';
+
+        elementLeftSection.appendChild(createImage);
+      };
+
+      createImage();
+
+      //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, e assim por diante. Essa lista deve ser filha do section criado no passo 6;
+
+      const numbers = [
+        'um',
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+        'dez',
+      ];
+
+      const createUnorderedList = () => {
+        const elementRightSection = document.querySelector('.right-content');
+        const createUl = document.createElement('ul');
+        createUl.className = 'list';
+        elementRightSection.appendChild(createUl);
+
+        //ADICIONA ITENS NA LISTA
+
+        for (let index = 0; index < numbers.length; index += 1) {
+          let listNumbers = numbers[index];
+
+          let listItems = document.createElement('li');
+          listItems.innerText = listNumbers;
+
+          createUl.appendChild(listItems);
+        }
+      };
+
+      createUnorderedList();
+
+      //Adicione 3 tags h3, todas filhas do main criado no passo 2.
+
+      const createThreeTags = () => {
+        const elementMain = document.querySelector('.main-content');
+        for (let index = 0; index < 3; index += 1) {
+          const createThreeH3 = document.createElement('h3');
+          createThreeH3.className = 'description';
+          createThreeH3.innerText = 'H3';
+
+          elementMain.appendChild(createThreeH3);
+        }
+      };
+
+      createThreeTags();
+
+      //Bônus - Remova a section criada no passo 5 (aquela que possui a classe left-content) por meio da função .removeChild();
+
+      const removeSection = () => {
+        const elementMain = document.querySelector('.main-content');
+        const removeContent = elementMain.childNodes[1];
+
+        elementMain.removeChild(removeContent);
+      };
+
+      removeSection();
+
+      //Bônus - Centralize a section criada no passo 6 (aquela que possui a classe right-content)
+
+      const centralizeSection = () => {
+        const elementRightSection = document.querySelector('.right-content');
+        elementRightSection.style.marginRight = 'auto';
+      };
+
+      centralizeSection();
+    </script>
+  </body>
+</html>
